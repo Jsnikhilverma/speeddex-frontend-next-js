@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" fill="none">
+  <!-- Geometric Architectural Crane / Tower Icon -->
+  <g transform="translate(6, 6)">
+    <!-- Interlocking angled beams & building core -->
+    <path d="M4 48 L22 6 L40 48 Z" stroke="#3b82f6" stroke-width="4.5" stroke-linejoin="round" fill="none"/>
+    <path d="M14 48 L28 16 L42 48" stroke="#f97316" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M22 6 L22 48" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M10 32 L34 32" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="22" cy="6" r="3.5" fill="#f97316"/>
+  </g>
+  <!-- Text: V POWER -->
+  <text x="64" y="32" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="24" letter-spacing="1.5" fill="#0f172a">
+    V<tspan fill="#f97316">·</tspan>POWER
+  </text>
+  <!-- Subtitle: CONSTRUCTIONS -->
+  <text x="65" y="48" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="9" letter-spacing="3.2" fill="#64748b">
+    CONSTRUCTIONS
+  </text>
+</svg>
