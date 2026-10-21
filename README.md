@@ -5,11 +5,11 @@
 bro mujhe iska landing page create krke do , ek dam same to same jaisa ye hai vaisa hi , using next js and tailwind css
 
 
-## Build with Lovable
+## Build with Mern Stack
 
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Ship faster**: describe what you want to build and Next js handles the code.
+- **Stay in sync**: every change made in Speeddex is committed straight to this repository.
 - **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
