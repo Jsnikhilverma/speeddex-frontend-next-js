@@ -78,16 +78,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "V Power Construction | Premier Infrastructure & Building Engineering" },
+      { title: "Speeddex Engineering | Premier Infrastructure & Building Engineering" },
       {
         name: "description",
         content:
-          "V Power Construction delivers iconic commercial towers, civil infrastructure, industrial facilities, and luxury residential developments.",
+          "Speeddex Engineering delivers iconic commercial towers, civil infrastructure, industrial facilities, and luxury residential developments.",
       },
-      { name: "author", content: "V Power Construction" },
+      { name: "author", content: "Speeddex Engineering" },
       {
         property: "og:title",
-        content: "V Power Construction | Premier Infrastructure & Building Engineering",
+        content: "Speeddex Engineering | Premier Infrastructure & Building Engineering",
       },
       {
         property: "og:description",
@@ -101,7 +101,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/logo.png", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,
