@@ -10,7 +10,7 @@ import { Compass, FileCheck2, Scan } from "lucide-react";
 export const Route = createFileRoute("/process")({
   head: () => ({
     meta: [
-      { title: "Execution Blueprint & Technology — V Power Construction" },
+      { title: "Execution Blueprint & Technology — speeddex Construction" },
       {
         name: "description",
         content:

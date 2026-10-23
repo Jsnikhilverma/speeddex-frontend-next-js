@@ -13,7 +13,7 @@ export function ServicesSection() {
       <div id="shipment" />
       <div className="max-w-[1440px] mx-auto">
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-extrabold leading-[1.2]">
-          V Power Engineering.
+          Speeddex Engineering Services.
         </h2>
         <div className="h-1 md:h-1.5 w-20 mx-auto my-5 md:mt-6 md:mb-12 rounded-[3px] bg-accent" />
         <div
@@ -56,14 +56,14 @@ export function ServicesSection() {
               ))}
             </ul>
             <div className="flex flex-wrap gap-4 mt-6">
-              <Button variant="nav" asChild size="lg">
+              <Button variant="blue" asChild size="lg">
                 <a href="/contact">
                   Connect With Us <ArrowUpRight />
                 </a>
               </Button>
-              <Button variant="soft" asChild size="lg">
+              {/* <Button variant="nav" asChild size="lg">
                 <a href="/services">Detailed Capabilities →</a>
-              </Button>
+              </Button> */}
             </div>
           </div>
           <img

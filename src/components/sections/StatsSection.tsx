@@ -1,58 +1,72 @@
+import React from "react";
 import { stats, certifications } from "@/data/construction-data";
 
 export function StatsSection() {
   return (
     <section
-      className="bg-ink text-inverse py-14 md:py-[100px] px-5 md:px-12 relative"
+      className="relative overflow-hidden bg-slate-50 py-16 text-slate-900 sm:py-20 md:py-12 px-5 sm:px-8 md:px-12 border-y border-slate-200/80"
       aria-label="Operational Statistics & Accreditations"
     >
-      <div className="max-w-[1440px] mx-auto">
-        <span className="inline-block border border-white/20 bg-white/10 text-white rounded-[24px] text-xs font-bold px-4 py-3 mb-6 md:mb-8 uppercase tracking-wider">
-          PROVEN TRACK RECORD
-        </span>
-        <h2 className="text-left text-3xl sm:text-4xl md:text-5xl font-extrabold leading-[1.2] mt-4 text-white">
-          The Numbers of Uncompromising Trust.
-        </h2>
-        <div className="h-1 md:h-1.5 w-20 my-5 md:mt-6 md:mb-8 rounded-[3px] bg-accent ml-0" />
-        <p className="text-muted-foreground text-[17px] md:text-xl max-w-3xl leading-[1.6]">
-          Behind every high-rise and highway we construct stands over a decade of disciplined
-          execution, verified institutional certifications, and an unblemished safety heritage.
-        </p>
+      {/* Background Decorative Ambient Glows */}
+      <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-blue-500/10 blur-[120px]" />
+      <div className="pointer-events-none absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-amber-500/10 blur-[120px]" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 lg:gap-7 mt-12">
-          {stats.map(({ number, label, desc }) => (
+      <div className="relative z-10 mx-auto max-w-[1440px]">
+        {/* Header Badge */}
+      
+
+        {/* Section Heading & Subtitle */}
+        <div className=" mb-14 max-w-7xl text-center">
+          <h2 className="text-center text-7xl font-extrabold tracking-tight text-slate-900 sm:text-4xl md:text-4xl lg:text-5xl leading-[1.15]">
+            The Numbers of{" "}
+            <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-amber-500 bg-clip-text text-transparent">
+              Uncompromising Trust.
+            </span>
+          </h2>
+
+          {/* Accent Divider Line */}
+        <div className="h-1 md:h-1.5 w-20 mx-auto my-5 md:mt-6 md:mb-12 rounded-[3px] bg-accent" />
+
+          <p className="max-w-[640px] text-muted-foreground text-[17px] md:text-xl mx-auto mb-8 md:mb-14 leading-[1.6]">
+            Behind every high-rise and highway we construct stands over a decade of disciplined
+            execution, verified institutional certifications, and an unblemished safety heritage.
+          </p>
+        </div>
+
+        {/* Stats Grid */}
+        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 md:gap-6 lg:gap-8">
+          {stats.map(({ number, label, desc }, idx) => (
             <article
-              key={label}
-              className="bg-white/[0.04] border border-white/[0.12] border-t-4 border-t-accent rounded-2xl p-6 sm:p-7 lg:p-10 relative hover:-translate-y-1 hover:bg-white/[0.07] hover:border-t-orange transition-all duration-200"
+              key={label || idx}
+              className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-amber-400 hover:shadow-xl hover:shadow-amber-500/10"
             >
-              <div className="text-[42px] md:text-[56px] font-black leading-[1.05] text-inverse mb-2 tracking-[-1px]">
-                {number}
+              {/* Top Accent Line */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500 to-orange-500 opacity-80 group-hover:opacity-100 transition-opacity" />
+
+              <div>
+                {/* Big Metric Number */}
+                <div className="text-4xl font-black tracking-tight text-slate-900 sm:text-5xl md:text-6xl group-hover:text-amber-600 transition-colors duration-300">
+                  {number}
+                </div>
+
+                {/* Metric Label */}
+                <div className="mt-3 text-xs font-extrabold tracking-[2px] uppercase text-amber-600">
+                  {label}
+                </div>
               </div>
-              <div className="text-xs font-extrabold tracking-[2px] uppercase text-accent mb-2">
-                {label}
-              </div>
-              <p className="text-sm leading-[1.6] text-muted-foreground">{desc}</p>
+
+              {/* Metric Description */}
+              <p className="mt-4 text-sm leading-relaxed text-slate-500 group-hover:text-slate-700 transition-colors">
+                {desc}
+              </p>
             </article>
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mt-12 pt-12 border-t border-white/[0.14]">
-          {certifications.map(({ Icon, title, desc }) => (
-            <div
-              key={title}
-              className="flex items-center gap-4 bg-white/[0.03] border border-white/10 rounded-xl px-5 py-[18px]"
-            >
-              <div className="w-11 h-11 rounded-[10px] bg-blue-surface text-primary grid place-items-center shrink-0">
-                <Icon size={24} strokeWidth={2} />
-              </div>
-              <div>
-                <h4 className="text-sm font-extrabold text-inverse mb-0.5">{title}</h4>
-                <p className="text-xs text-muted-foreground m-0">{desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        
       </div>
     </section>
   );
 }
+
+export default StatsSection;

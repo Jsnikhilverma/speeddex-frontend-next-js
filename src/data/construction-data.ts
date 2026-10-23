@@ -281,7 +281,7 @@ export const testimonials = [
     project: "Apex Financial Tower ($120M)",
     avatar: client1.url,
     quote:
-      '"V Power delivered our 42-story commercial tower 22 days ahead of schedule. Their 5D BIM clash detection eliminated over 8% in potential rework costs and their site safety protocols were exemplary. True master builders."',
+      '"Speeddex delivered our 42-story commercial tower 22 days ahead of schedule. Their 5D BIM clash detection eliminated over 8% in potential rework costs and their site safety protocols were exemplary. True master builders."',
   },
   {
     name: "Elena Rostova",
@@ -297,7 +297,7 @@ export const testimonials = [
     project: "The Horizon Cantilever Residence",
     avatar: client3.url,
     quote:
-      '"The cantilevered architectural concrete villa we designed seemed structurally impossible on paper to most contractors. V Power\'s post-tensioning engineering team delivered it without a single compromise in aesthetics or safety."',
+      '"The cantilevered architectural concrete villa we designed seemed structurally impossible on paper to most contractors. Speeddex\'s post-tensioning engineering team delivered it without a single compromise in aesthetics or safety."',
   },
 ];
 

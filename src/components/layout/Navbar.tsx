@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.asset.json";
+import logo from "../../../public/loge.png";
 import { navLinks } from "@/data/construction-data";
 
 export function Navbar() {
@@ -10,11 +10,11 @@ export function Navbar() {
   return (
     <header className="fixed z-50 top-4 left-4 right-4 md:left-10 md:right-10">
       <div className="h-[68px] md:h-[84px] px-[18px] md:px-6 lg:px-10 py-2.5 md:py-4 bg-background rounded-[24px] md:rounded-[32px] shadow-nav flex items-center justify-between gap-3 md:gap-6">
-        <a href="/" aria-label="V Power Constructions home">
+        <a href="/" aria-label="Constructions home">
           <img
-            className="w-[92px] h-[44px] md:w-[116px] md:h-[53px] object-contain"
-            src={logo.url}
-            alt="V Power Constructions"
+            className="w-[92px] h-[44px] md:w-[406px] md:h-[63px] object-contain"
+            src={logo}
+            alt=" Constructions"
           />
         </a>
 
@@ -31,11 +31,11 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2 md:gap-4">
-          <Button variant="nav" asChild className="hidden md:inline-flex">
+          {/* <Button variant="nav" asChild className="hidden md:inline-flex">
             <a href="/projects">
               PORTAL <ArrowUpRight />
             </a>
-          </Button>
+          </Button> */}
           <Button variant="nav" asChild>
             <a href="/contact">
               REQUEST A QUOTE <ArrowUpRight />

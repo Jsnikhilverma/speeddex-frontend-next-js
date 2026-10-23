@@ -8,11 +8,11 @@ import { MapPin, Phone, Clock } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us & Request A Quote — V Power Construction" },
+      { title: "Contact Us & Request A Quote — Speeddex Construction" },
       {
         name: "description",
         content:
-          "Reach out to V Power Construction engineering headquarters for turnkey project estimates, architectural consultations, and site inquiries.",
+          "Reach out to speeddex Construction engineering headquarters for turnkey project estimates, architectural consultations, and site inquiries.",
       },
     ],
   }),

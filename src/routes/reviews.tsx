@@ -9,7 +9,7 @@ import { QuoteSection } from "@/components/sections/QuoteSection";
 export const Route = createFileRoute("/reviews")({
   head: () => ({
     meta: [
-      { title: "Client Reviews & Endorsements — V Power Construction" },
+      { title: "Client Reviews & Endorsements — Speeddex Construction" },
       {
         name: "description",
         content:
@@ -28,7 +28,7 @@ function ReviewsPage() {
         <PageHeader
           eyebrow="CLIENT REVIEWS & TESTIMONIALS"
           title="Endorsed by the Visionaries Who Shape Skylines"
-          description="Institutional developers and master architects trust V Power Construction for our mathematical predictability, unyielding site safety, and craftsmanship that endures for generations."
+          description="Institutional developers and master architects trust Speeddex Construction for our mathematical predictability, unyielding site safety, and craftsmanship that endures for generations."
           ctaText="Partner With Us"
           ctaLink="/contact"
         />

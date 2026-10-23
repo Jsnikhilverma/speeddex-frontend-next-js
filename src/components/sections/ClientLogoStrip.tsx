@@ -8,9 +8,9 @@ export function ClientLogoStrip() {
       aria-label="Trusted Enterprise Partners"
     >
       <div className="max-w-[1440px] mx-auto flex items-center justify-between gap-8 flex-wrap">
-        <span className="text-[11px] font-extrabold tracking-[3px] text-muted-foreground uppercase">
+        {/* <span className="text-[11px] font-extrabold tracking-[3px] text-muted-foreground uppercase">
           TRUSTED BY DEVELOPERS &amp; INSTITUTIONAL BUILDERS
-        </span>
+        </span> */}
         <div className="flex items-center justify-center md:justify-start gap-6 md:gap-12 flex-wrap">
           {partners.map((partner) => (
             <div

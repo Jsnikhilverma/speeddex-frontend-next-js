@@ -88,7 +88,7 @@ export function HeroSection() {
       </div>
 
       {/* Hero Content Overlay (If Banner has details) */}
-      {activeBanner && (activeBanner.title || activeBanner.badge) && (
+      {/* {activeBanner && (activeBanner.title || activeBanner.badge) && (
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
           {activeBanner.badge && (
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/20 backdrop-blur-md border border-blue-400/30 text-blue-300 text-xs font-bold tracking-widest uppercase mb-6 animate-fade-in">
@@ -107,10 +107,10 @@ export function HeroSection() {
             <p className="mt-6 text-base sm:text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed drop-shadow-sm font-normal">
               {activeBanner.subtitle}
             </p>
-          )}
+          )} */}
 
-          {/* Action Buttons */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+        
+          {/* <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             {activeBanner.ctaText && (
               <a
                 href={activeBanner.ctaLink || "/projects"}
@@ -129,11 +129,11 @@ export function HeroSection() {
                 <span>{activeBanner.secondaryCtaText}</span>
               </a>
             )}
-          </div>
-        </div>
-      )}
+          </div> */}
+        {/* </div>
+      )} */}
 
-      {/* Carousel Multi-Banner Navigation Controls */}
+    
       {hasMultiple && (
         <>
           <button

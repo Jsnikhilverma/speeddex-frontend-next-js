@@ -18,16 +18,16 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "V Power Construction — Engineering & Infrastructure Solutions",
+        title: "speeddex Construction — Engineering & Infrastructure Solutions",
       },
       {
         name: "description",
         content:
-          "V Power Construction delivers iconic commercial towers, civil infrastructure, industrial facilities, and luxury residential developments with zero-harm safety standards.",
+          "Speeddex Construction delivers iconic commercial towers, civil infrastructure, industrial facilities, and luxury residential developments with zero-harm safety standards.",
       },
       {
         property: "og:title",
-        content: "V Power Construction — Engineering & Infrastructure Solutions",
+        content: "speeddex Construction — Engineering & Infrastructure Solutions",
       },
       {
         property: "og:description",
@@ -50,9 +50,11 @@ function Index() {
         <ContactStrip />
         <ClientLogoStrip />
         <DifferenceSection />
+        
         <StatsSection />
+         <TrustShowcase />
         <ProcessSection />
-        <TrustShowcase />
+       
         <ServicesSection />
         <QualitySection />
         <TestimonialsSection />

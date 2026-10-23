@@ -48,9 +48,9 @@ export function DifferenceSection() {
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[70px] items-center">
           <div>
-            <span className="inline-block border border-border bg-secondary text-secondary-foreground rounded-[24px] text-xs font-bold px-4 py-3 mb-6 md:mb-8 uppercase tracking-wider">
+            {/* <span className="inline-block border border-border bg-secondary text-secondary-foreground rounded-[24px] text-xs font-bold px-4 py-3 mb-6 md:mb-8 uppercase tracking-wider">
               ENGINEERING EXCELLENCE
-            </span>
+            </span> */}
             <h2 className="text-4xl md:text-5xl font-extrabold leading-[1.1] mb-8 md:mb-12 max-w-[600px]">
               We are dedicated to
               <br /> delivering comprehensive

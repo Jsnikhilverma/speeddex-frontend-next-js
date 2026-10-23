@@ -39,7 +39,7 @@ const safeLocation = (loc: any): string => {
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Landmark Projects Portfolio — V Power Construction" },
+      { title: "Landmark Projects Portfolio — speedex Construction" },
       {
         name: "description",
         content:
